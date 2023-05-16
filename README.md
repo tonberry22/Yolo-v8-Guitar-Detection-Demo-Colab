@@ -41,20 +41,29 @@ After generating the dataset, continue running the cells until you reach the mod
 After that we can print out the confusion matrix, model results, and sample validation results:
 ![Confusion Matrix](./images/confusion_matrix.png)
 ![Model Results](./images/model_results.png)
-![Sample Validation](./images/sample_validation.jpeg)
+![Sample Validation](./images/sample_validation.jpg)
 Well, it does seem to be detecting most guitars, at least! Considering our small dataset and very short training time, I think it's done pretty well. Let's test the model with some of the images we downloaded earlier.
 
 ## Sample Test results
-![Test image](./images/test1.jpeg)
-![Test image](./images/test2.jpeg)
-![Test image](./images/test3.jpeg)
-![Test image](./images/test4.jpeg)
-![Test image](./images/test5.jpeg)
-![Test image](./images/test6.jpeg)
-![Test image](./images/test7.jpeg)
-![Test image](./images/test8.jpeg)
+![Test image](./images/test1.jpg)
+![Test image](./images/test2.jpg)
+![Test image](./images/test3.jpg)
+![Test image](./images/test4.jpg)
+![Test image](./images/test5.jpg)
+![Test image](./images/test6.jpg)
+![Test image](./images/test7.jpg)
+![Test image](./images/test8.jpg)
 
 As seen above, it seems to be able to detect and capture most guitars, but note that the last picture fooled the detector a bit due to its orientation. We can check the training set and see that it had very little opportunity to learn this angle and orientation properly, and increasing the training set size would definitely help in those cases.
+
+## How to improve the model
+
+There are more than a couple ways to can improve the model performance. Some include:
+- Increasing the number of images used to train the model
+- Increasing the variety of images used to train the model for better detection of the object in different orientations
+- Increasing the training time (more epochs)
+- Changing the model size of Yolo v8 used (larger model = better accuracy but possibly lower speed)
+- Follow the latest research and evelopments on arxiv.org (e.g. [this paper](file:///D:/Downloads/preprints202212.0049.v2.pdf) successfully used transfer learning like we are attemping on drones)
 
 ## Conclusion
 

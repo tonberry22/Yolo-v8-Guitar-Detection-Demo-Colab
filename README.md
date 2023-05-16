@@ -63,7 +63,7 @@ There are more than a couple ways to can improve the model performance. Some inc
 - Increasing the variety of images used to train the model for better detection of the object in different orientations
 - Increasing the training time (more epochs)
 - Changing the model size of Yolo v8 used (larger model = better accuracy but possibly lower speed)
-- Follow the latest research and evelopments on arxiv.org (e.g. [this paper](file:///D:/Downloads/preprints202212.0049.v2.pdf) successfully used transfer learning like we are attemping on drones)
+- Follow the latest research and developments on arxiv.org (e.g. [this paper](https://www.preprints.org/manuscript/202212.0049/v2/download) successfully used transfer learning like we are attemping, but on drones)
 
 ## Conclusion
 
